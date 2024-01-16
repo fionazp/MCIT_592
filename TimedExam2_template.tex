@@ -1,0 +1,239 @@
+\documentclass[11pt]{article}
+\usepackage{etoolbox}
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage[parfill]{parskip}
+\usepackage{amsmath,amssymb,graphicx}
+\usepackage{fancyhdr}
+\usepackage{enumerate}
+\usepackage{xcolor}
+
+\newcommand{\docdate}{January 16, 2019}
+\newcommand{\duedate}{??:00 AM, January ??, 2020 }
+
+\newcommand{\sol}{\bigskip\textbf{Solution.}\qquad\qquad}
+
+\setlength{\headheight}{14pt}
+\renewcommand{\baselinestretch}{1.3}
+\pagestyle{fancyplain}
+\fancyfoot{}
+\fancyhead[L]{Exam \HomeworkNo{}}
+\fancyhead[C]{OMCIT 592}
+\fancyhead[R]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\headheight}{14pt}
+\setlength{\headsep}{12pt}
+\setlength{\footskip}{0pt}
+
+\fancypagestyle{firstpage}{
+  \fancyhead{}
+  \fancyfoot{}
+}
+
+
+\newcommand{\problembreak}{\bigskip\hrule\bigskip}
+\newcommand{\points}[1]{\textbf{[#1 pts]}}
+
+\newcommand{\Val}{\mbox{Val}}
+\newcommand{\E}{\mbox{E}}
+\newcommand{\Var}{\mbox{Var}}
+
+\newcommand{\HomeworkNo}{2}
+
+
+\begin{document}
+\thispagestyle{firstpage}
+\begin{center}
+{\Large OMCIT 592~~Spring 2022\hfill Exam \HomeworkNo}\\[20pt]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%  DO NOT MODIFY ABOVE THIS LINE  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%    USEFUL RESOURCES BELOW (you can copy and paste these resources to your solutions)   %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% 1. Fraction x/y
+% \frac{x}{y}
+
+% 2. Square root (\sqrt{x}), Logarithm with base b (\log_b{x}), Natural Log (\ln{x}) 
+
+% 3. Binomial n Choose k
+% \binom{n}{k}
+
+% 4. Greater than or equal (\geq}, less than or equal (\leq), not equal (\neq) commands 
+
+% 5. Logical or (\lor or \vee), logical and (\land or \wedge), logical implication (\implies),  logical negation (\neq), and logical equivalence (\equiv) commands. 
+
+% 6. Set union (\cup), set intersection (\cap), empty set \emptyset, strict subset (\subset), strict super-set (\supset), not necessarily proper/strict subset (\subseteq), not necessarily proper/strict super-set (\supseteq) 
+
+%7. Probabilities: Pr[A] (\Pr[A]), Expectation E[X] (\E[X])
+
+%8. Dots ... (\ldots)
+
+%9. Box Correct answer \boxed{answer}
+
+%10. Dot Product • (\cdot)
+
+%11. Perpendicular/Independent (\perp), Not Independent (\not\perp)
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%    COMPLETE EMAIL AND NAME IN FIELDS BELOW      %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\mbox{YOUR NAME}
+\hfill
+\mbox{YOUR PENN EMAIL ADDRESS}
+\hfill
+\mbox{\today}
+\end{center}
+
+\vspace*{1cm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%  DO NOT MODIFY BETWEEN THESE LINES  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\rule{\textwidth}{0.4pt}
+This assignment is due at the beginning of the the first section on the due date.
+Unless all problems carry equal weight, the point value of each
+problem is shown in [ ]. To receive full
+credit all your answers should be carefully justified.
+Each solution must be written independently by yourself - \textbf{no collaboration is allowed}.
+\problembreak
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%  DO NOT MODIFY BETWEEN THESE LINES  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%
+%%%  PROBLEM 1  %%%
+%%%%%%%%%%%%%%%%%%%%
+\begin{enumerate}
+\item \points{10}
+Alice conducts in private the following random experiment. 
+First she flips a fair coin.
+If the coin comes up \emph{heads} she (independently) rolls a fair die \emph{once}. 
+If the coin comes up \emph{tails} she rolls a fair die \emph{twice}, independently, and independently of the coin flip. 
+Alice does \emp{not} tell Bob what the coin showed but she tells Bob
+a number that she obtains as follows:
+\begin{itemize}
+    \item If she rolled the die \emph{once} she just tells Bob what number the die showed.
+    \item If she rolled the die \emph{twice} she adds the two numbers shown and tells Bob that sum.
+\end{itemize}
+\begin{enumerate}
+    \item \points{5}~~Calculate the probability that Alice tells the number 6 to Bob.
+    \item \points{5}~~Suppose Alice tells Bob the number 6. What seems more likely to Bob: that the coin came up heads or that it came up tails?
+\end{enumerate}
+Remember to describe the probability space and to justify your answers.
+
+
+\textbf{Solution.}
+\begin{enumerate}
+    \item YOUR SOLUTION TO PART (a) HERE
+    \item YOUR SOLUTION TO PART (b) HERE
+\end{enumerate}
+
+
+\bigskip
+
+
+%%%%%%%%%%%%%%%%%%%%
+%%%  PROBLEM 2  %%%
+%%%%%%%%%%%%%%%%%%%%
+\item \points{10} 
+We generate uniformly at random a sequence of 10 (ten) decimal digits, that is, elements of  \texttt{[0..9]}. Digits can repeat, for example, \texttt{2675673377} or \texttt{0884480491}. What is the probability of each of the following events?
+\begin{enumerate}
+	\item \points{5} The first three digits of the sequence are \texttt{801} \emph{or} \texttt{555} \emph{or} \texttt{090}.
+	\item \points{5} The string begins \emph{or} ends with \texttt{999}.
+\end{enumerate}
+Remember to describe the probability space and to justify your answers.
+
+\textbf{Solution.} 
+\begin{enumerate}
+    \item YOUR SOLUTION TO PART (a) HERE
+    \item YOUR SOLUTION TO PART (b) HERE
+\end{enumerate}
+
+\bigskip
+
+
+%%%%%%%%%%%%%%%%%%%%
+%%%  PROBLEM 3  %%%
+%%%%%%%%%%%%%%%%%%%%
+\item \points{10} 
+Consider a random permutation of the decimal digits, that is, of the numbers $\{0,1,2,3,4,5,6,7,8,9\}$, and the following two events:\\$E$ is ``the first two digits are
+0 and 1 in that order''.\\$F$ is ``the last two digits are 8 and 9 in that order''.\\Are $E$ and $F$ independent? 
+
+We know this probability space from lecture, no need to describe it. However, justify your answer!
+
+\textbf{Solution.} \\
+YOUR SOLUTION HERE 
+
+\bigskip
+
+
+%%%%%%%%%%%%%%%%%%%%
+%%%  PROBLEM 4  %%%
+%%%%%%%%%%%%%%%%%%%%
+\item \points{15} 
+Let $X$ and $Y$ be two independent Bernoulli random variables, both with parameter 1/2, defined on the same probability space.
+Consider the random variables $Z=(1-X)(1-Y)$ and $W=1-XY$.
+\begin{enumerate}
+    \item \points{5}~~ Among $Z$ and $W$, which one has the larger expectation? Justify your answer.
+    \item \points{5}~~ Are $Z$ and $W$ independent? Justify your answer.
+    \item \points{5}~~Compute the variance of $W$.
+\end{enumerate}
+No need to describe the probability space. However, justify your answer!
+
+\textbf{Solution.} 
+\begin{enumerate}
+    \item YOUR SOLUTION TO PART (a) HERE
+    \item YOUR SOLUTION TO PART (b) HERE
+\end{enumerate}
+
+\bigskip
+
+
+%%%%%%%%%%%%%%%%%%%%
+%%%  PROBLEM 5  %%%
+%%%%%%%%%%%%%%%%%%%%
+\item \points{15} 
+You offer Alice and Bob a game of chance. The game works as follows. You give each of them 
+a \emph{biased} coin. Let $A$ be Alice's coin and $B$ be Bob's coin. Let's denote by $\Pr[A=H]=p_A$ and $\Pr[B=H]=p_B$.
+Each of them flips their coin independently. There is also a bank that you can assume will never run out of money.
+\begin{itemize}
+\item If $A=H$ ($A$ shows heads) and $B=T$ then Alice \emph{takes} \$1 from the bank and Bob \emph{gives} \$1 to the bank. You also \emph{give} \$1 to the bank.
+\item If $A=T$ and $B=H$ then Alice \emph{gives} \$1 to the bank
+and Bob \emph{takes} \$1 from the bank. You also \emph{give} \$1 to the bank.
+\item If $A=H$ and $B=H$ then Alice and Bob do nothing but you \emph{take} \$2 from the bank. 
+\item If $A=T$ and $B=T$ then everybody does nothing.
+\end{itemize}
+Assume that Alice and Bob don't care if you make money but they care very much that the game treats the two of them equally, that is, that the two of them have the same expected gains/losses. As long as you respect their desire, you are free to set $p_A$ and $p_B$ as you wish.
+\begin{enumerate}
+    \item \points{5}~~ Prove that for Alice and Bob to have the same expected 
+    gains/losses you must bias the two coins in exactly the same way, that is $p_A=p_B$.
+    \item \points{10}~~ Assume (just for this part) that you set $p_A=p_B=3/4$.
+    Calculate \emph{your} expected gains after 100 repetitions of the game. Justify your answer.
+\end{enumerate}
+Remember to describe the probability space.
+
+\textbf{Solution.}
+\begin{enumerate}
+    \item YOUR SOLUTION TO PART (a) HERE
+    \item YOUR SOLUTION TO PART (b) HERE
+\end{enumerate}
+
+
+
+\end{enumerate}
+\end{document}

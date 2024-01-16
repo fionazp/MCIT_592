@@ -1,0 +1,179 @@
+\documentclass[11pt]{article} %DO NOT MODIFY THIS LINE
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%  FILL IN THE FOLLOWING  %%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\name}{YOUR NAME HERE} % Name here
+\newcommand{\email}{YOUR PENN EMAIL HERE} % Email here
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%  DO NOT MODIFY FROM HERE  %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\usepackage{etoolbox}
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage[parfill]{parskip}
+\usepackage{etoolbox}
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage[parfill]{parskip}
+\usepackage{amsmath,amssymb,graphicx}
+\usepackage{fancyhdr}
+\usepackage{enumerate}
+\usepackage{xcolor}
+\usepackage{tikz}
+
+\setlength{\headheight}{14pt}
+\renewcommand{\baselinestretch}{1.3}
+\pagestyle{fancyplain}
+\fancyfoot{}
+\fancyhead[L]{Homework \HomeworkNo{}}
+\fancyhead[C]{CIT 592}
+\fancyhead[R]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\headheight}{14pt}
+\setlength{\headsep}{12pt}
+\setlength{\footskip}{4.1pt}
+
+\fancypagestyle{firstpage}{
+  \fancyhead{}
+  \fancyfoot{}
+}
+
+\newcommand{\adj}{{-}}
+
+\newcommand{\sol}{\bigskip\textbf{Solution.}\qquad\qquad}
+\newcommand{\problembreak}{\bigskip\hrule\bigskip}
+\newcommand{\points}[1]{\textbf{[#1 pts]}}
+\newcommand{\course}{CIT 592 Fall 2021}
+\newcommand{\HomeworkNo}{1}
+
+\begin{document}
+    \thispagestyle{firstpage}
+    \begin{center}
+        {\Large \course \hfill Homework \HomeworkNo}\\[20pt]\fbox{\name}\\ \fbox{\email}\hfill
+    \end{center}
+    
+    \vspace*{2cm} \problembreak \vspace*{2cm}
+    
+    
+    \begin{enumerate}
+        [\bf 1.]
+          \setlength\itemsep{10pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%  TO HERE  %%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%
+%%%  PROBLEM 1  %%%
+%%%%%%%%%%%%%%%%%%%%
+  
+\item \points{10} 
+Over the years, Francesca, who loves fashion, has become an adamant lover of shoes. As such, she has many types in her collection,
+including:
+(1) sneakers,
+(2) flip flops,
+(3) sandals,
+(4) slippers,
+and (5) combat boots.
+Francesca realizes that she has too many shoes, so she decides to have a garage sale. $n \geq 3$ TAs, including Sasha, Kevin, and Arnav, show up to the sale, and since they're Francesca's friends, Francesca kindly offers to discount all of her shoes. However, in order to be eligible for the discount, Francesca mandates that each customer can only buy at most one pair of each type (ex. someone can buy a pair of sneakers and a pair of flip flops, but not two pairs of flip flops). Sasha must buy 1 pair of each of the 5 types, Kevin must also buy 1 pair of each of the 5 types, and Arnav must buy 1 pair of exactly 2 of the 5 types. All other customers can buy 0 or 1 pair of all of the 5 types. Assume that Francesca has enough shoes for each of the $n$ TA's to purchase 1 pair of each type. How many distinct ways can these $n$ customers buy Francesca's shoes and be eligible for the discount? Treat a pair of shoes as a single item.
+
+\sol
+
+ YOUR SOLUTION HERE
+
+\bigskip
+
+\bigskip
+
+
+
+%%%%%%%%%%%%%%%%%%%%
+%%%  PROBLEM 2  %%%
+%%%%%%%%%%%%%%%%%%%%
+
+\item \points{10} 
+    Let $A=\{2,3\}$, $B=\{3,4,5\}$, and $C=\{3,5,7,9\}$ and let
+    $P$ be the set whose elements are all the proper subsets of
+    $(A\cup B)\setminus C$. List all the elements of $2^P$.
+    Show your work.
+
+	  
+\sol
+
+ YOUR SOLUTION HERE
+
+\bigskip
+
+\bigskip
+
+
+
+%%%%%%%%%%%%%%%%%%%%
+%%%  PROBLEM 3  %%%
+%%%%%%%%%%%%%%%%%%%%
+
+\item \points{10} 
+    $n\geq2$ distinguishable Hogwarts students participate in 
+    Professor Snape's experiment.
+    Each student is given potion A, or philter B,
+    or neither, or both. We know that Harry and Hermione are the only
+    students among the $n$ that are given both A and B. In how many
+    distinct ways could Snape have distributed his experimental liquids?
+
+
+\sol
+
+YOUR SOLUTION HERE
+
+\bigskip
+
+\bigskip
+
+
+%%%%%%%%%%%%%%%%%%%%
+%%%  PROBLEM 4  %%%
+%%%%%%%%%%%%%%%%%%%%
+
+\item \points{10}
+    Prove that each of the following integers is composite (not prime).
+    \begin{enumerate}
+        \item $3^{222}+1$
+        \item $2^{35}(2^{33}-1)+1$
+    \end{enumerate}
+    
+\sol
+    \begin{enumerate}
+        \item YOUR SOLUTION TO (a) HERE
+
+        \item YOUR SOLUTION TO (b) HERE
+    \end{enumerate}
+
+\bigskip
+
+\bigskip
+
+
+%%%%%%%%%%%%%%%%%%%%
+%%%  PROBLEM 5  %%%
+%%%%%%%%%%%%%%%%%%%%
+
+\item \points{10}
+     $z$ is said to be a \emph{Broadway integer} (this is not a standard term, it was made up for this problem) when $z=4k+2$ for
+     some integer $k$. Prove that the difference of the squares of two Broadway integers is always divisible by 16.
+
+\sol
+
+YOUR SOLUTION HERE
+
+
+
+\bigskip
+
+\bigskip
+
+
+\end{enumerate}
+\end{document}
